@@ -23,31 +23,31 @@ public class filteresStatsLinguaggi extends fStats{
 				  totalekotlin ++;
 				  if(z.getRemoto()==true)
 						r1++;
-				  if(z.getOrarioLavoro()!=null)
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract")))){
 					   f1++; }
 			  if(z.getLinguaggi().contains("ruby")){
 				  totaleruby ++;
 				  if(z.getRemoto()==true )
 						r2++;
-				  if(z.getOrarioLavoro()!=null)
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 					   f2++;}
 			  if(z.getLinguaggi().contains("javascript")){
 				  totalejavas ++;
 				  if(z.getRemoto()==true )
 						r3++;
-				  if(z.getOrarioLavoro()!=null)
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 					   f3++;}
 			  if(z.getLinguaggi().contains("python")){
 				  totalepython ++;
 				  if(z.getRemoto()==true )
 						r4++;
-				  if(z.getOrarioLavoro()!=null)
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 					   f4++;}
 			  if(z.getLinguaggi().contains("typescript")){
 				  totaletypescript ++;
 				  if(z.getRemoto()==true)
 						r5++;
-				  if(z.getOrarioLavoro()!=null)
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 					   f5++;}
         }
         JSONArray array= new JSONArray();
@@ -157,31 +157,31 @@ public class filteresStatsLinguaggi extends fStats{
 								  totalekotlin ++;
 								  if(z.getRemoto()==true)
 										r1++;
-								  if(z.getOrarioLavoro()!=null)
+								  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 									   f1++; }
 							  if(l.contains("ruby")){
 								  totaleruby ++;
 								  if(z.getRemoto()==true )
 										r2++;
-								  if(z.getOrarioLavoro()!=null)
+								  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 									   f2++;}
 							  if(l.contains("javascript")){
 								  totalejavas ++;
 								  if(z.getRemoto()==true )
 										r3++;
-								  if(z.getOrarioLavoro()!=null)
+								  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 									   f3++;}
 							  if(l.contains("python")){
 								  totalepython ++;
 								  if(z.getRemoto()==true )
 										r4++;
-								  if(z.getOrarioLavoro()!=null)
+								  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 									   f4++;}
 							  if(l.contains("typescript")){
 								  totaletypescript ++;
 								  if(z.getRemoto()==true)
 										r5++;
-								  if(z.getOrarioLavoro()!=null)
+								  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 									   f5++;}}}}}
 				JSONArray array= new JSONArray();
 				JSONObject ob1= new JSONObject();
@@ -251,7 +251,7 @@ public class filteresStatsLinguaggi extends fStats{
 			double totalepython=0;
 	        double totaletypescript=0;
 	        for(Lavori z:offerte) {
-	        	if(z.getSitoWeb().equals(link)) {
+	        	if(z.getSitoWeb().contains(link)) {
 	        	if(z.getLinguaggi().contains("kotlin")){
 					  totalekotlin ++;
 					  if(z.getRemoto()==true)
@@ -262,25 +262,25 @@ public class filteresStatsLinguaggi extends fStats{
 					  totaleruby ++;
 					  if(z.getRemoto()==true )
 							r2++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f2++;}
 				  if(z.getLinguaggi().contains("javascript")){
 					  totalejavas ++;
 					  if(z.getRemoto()==true )
 							r3++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f3++;}
 				  if(z.getLinguaggi().contains("python")){
 					  totalepython ++;
 					  if(z.getRemoto()==true )
 							r4++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f4++;}
 				  if(z.getLinguaggi().contains("typescript")){
 					  totaletypescript ++;
 					  if(z.getRemoto()==true)
 							r5++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f5++;}
 	        }}
 	        JSONArray array= new JSONArray();
@@ -378,31 +378,31 @@ public class filteresStatsLinguaggi extends fStats{
 					  totalekotlin ++;
 					  if(z.getRemoto()==true)
 							r1++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f1++; }
 				  if(z.getLinguaggi().contains("ruby")){
 					  totaleruby ++;
 					  if(z.getRemoto()==true )
 							r2++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f2++;}
 				  if(z.getLinguaggi().contains("javascript")){
 					  totalejavas ++;
 					  if(z.getRemoto()==true )
 							r3++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f3++;}
 				  if(z.getLinguaggi().contains("python")){
 					  totalepython ++;
 					  if(z.getRemoto()==true )
 							r4++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f4++;}
 				  if(z.getLinguaggi().contains("typescript")){
 					  totaletypescript ++;
 					  if(z.getRemoto()==true)
 							r5++;
-					  if(z.getOrarioLavoro()!=null)
+					  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 						   f5++;}
 	        }}
 	        JSONArray array= new JSONArray();

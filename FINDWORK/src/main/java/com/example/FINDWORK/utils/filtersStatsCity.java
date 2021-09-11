@@ -268,7 +268,7 @@ return array;
 		int totaleplano=0;
 		for(Lavori z:offerte) {
 			 if(z.getCity()!=null) {
-				 if(z.getSitoWeb().equals(link)) {
+				 if(z.getSitoWeb().contains(link)) {
 				 if(z.getCity().contains("Chicago, IL")){
 					  totalechicago++;
 					  if(z.getRemoto()==true)

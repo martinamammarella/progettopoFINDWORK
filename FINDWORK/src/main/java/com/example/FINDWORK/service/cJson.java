@@ -55,9 +55,8 @@ public class cJson {
 		    elem.setOrarioLavoro((String)l.get("employment_type"));
 		    elem.setRemoto((boolean)l.get("remote"));
 		    elem.setRuolo((String)l.get("role"));
-		    elem.setSitoWeb((String)l.get("url"));
+		    elem.setSitoWeb((String)l.get("source"));
 		    offerte.add(elem);}
-			int conta=0;
 		    while(chiamata!=null&&(String) chiamata.get("next")!=null ) { 
 		    
 			try {
@@ -101,9 +100,8 @@ public class cJson {
 				    elem.setOrarioLavoro((String)l.get("employment_type"));
 				    elem.setRemoto((boolean)l.get("remote"));
 				    elem.setRuolo((String)l.get("role"));
-				    elem.setSitoWeb((String)l.get("url"));
+				    elem.setSitoWeb((String)l.get("source"));
 				    offerte.add(elem);}
-				conta++;
 		    	  }else {
 		    		  break;
 		    	  }}
