@@ -17,13 +17,13 @@ public class filteresStatsLinguaggi extends fStats{
 		double totalejavas=0;
 		double totalepython=0;
         double totaletypescript=0;
-        int count=0;
+        
         for(Lavori z:offerte) {
         	if(z.getLinguaggi().contains("kotlin")){
 				  totalekotlin ++;
 				  if(z.getRemoto()==true)
 						r1++;
-				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract")))){
+				  if(z.getOrarioLavoro()!=null &&(!(z.getOrarioLavoro().equals("contract"))))
 					   f1++; }
 			  if(z.getLinguaggi().contains("ruby")){
 				  totaleruby ++;
