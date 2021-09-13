@@ -9,13 +9,21 @@ import java.util.Vector;
 import java.util.ArrayList;
 import java.util.Date;
 import java.math.*;
-
+/**
+ * classe da cui istanziare oggetti per  la generazione delle statistiche sulle città e il filtraggio su queste ultime
+ * @author marty
+ *
+ */
 public class filtersStatsCity extends fStats {
-	
+	/**
+	 * costruttore, richiama costruttore della superclasse
+	 */
 	public filtersStatsCity() {super();};
-	public filtersStatsCity(ArrayList<Lavori> offerte,String[]lin,String[] city,String sito,String data) {
-		super(offerte,lin,city,sito,data);
-	}
+	/**
+	 * metodo che genera statistiche sulle città scelte dal programmatore
+	 * @param offerte su cui effettuare statistiche
+	 * @return statistiche non filtrate
+	 */
 	public JSONArray statsCity(ArrayList<Lavori> offerte) {
 		double r1=0, r2=0,r3=0,r4=0,r5=0;
 		double f1=0, f2=0,f3=0,f4=0,f5=0;
@@ -143,7 +151,12 @@ else {
 return array;
 		
 	}
-	
+	/**
+	 * metodo che realizza le statistiche e le filtra in base a quelle specificate dall'utente, fra quell scelte dal programmatore
+	 * @param scity città su cui filtrare le statistiche, tra quelle scelte dal programmatore
+	 * @param offerte su cui effettuare statistiche
+	 * @return statistiche filtrate
+	 */
 	
 	public JSONArray filtraggioStatsCity(JSONArray scity,ArrayList<Lavori> offerte) {
 	String[]city= new String[scity.size()];
@@ -258,6 +271,12 @@ return array;
 		array.add(ob5);}
 		return array;
 		}
+	/**
+	 * metodo che effettua il filtraggio delle statistiche sulle città in base al link
+	 * @param offerte  specificato su cui fare statistiche
+	 * @param link in base a cui filtrare delle statistiche
+	 * @return statistiche filtrate 
+	 */
 	public JSONArray filtraggioLink(ArrayList<Lavori>offerte,String link) {
 		double r1=0, r2=0,r3=0,r4=0,r5=0;
 		double f1=0, f2=0,f3=0,f4=0,f5=0;
@@ -386,6 +405,12 @@ else {
 return array;
 		
 	}
+	/**
+	 * metodo che effettua il filtraggio delle statistiche sulle città in base alla data specificata
+	 * @param offerte su cui fare statistiche
+	 * @param data su cui filtrare le statistiche
+	 * @return statistiche filtrate
+	 */
 	public JSONArray filtraggioData(ArrayList<Lavori>offerte,String data) {
 		double r1=0, r2=0,r3=0,r4=0,r5=0;
 		double f1=0, f2=0,f3=0,f4=0,f5=0;

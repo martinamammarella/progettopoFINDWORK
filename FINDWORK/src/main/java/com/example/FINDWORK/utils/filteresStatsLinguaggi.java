@@ -7,8 +7,21 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
+/**
+ * classe da cui istanziare oggetti per  la generazione delle statistiche sui linguaggi e il filtraggio su queste ultime
+ * @author marty
+ *
+ */
 public class filteresStatsLinguaggi extends fStats{
+	/**
+	 * costruttore, richiama il costruttore della superclasse
+	 */
 	public filteresStatsLinguaggi () {};
+	/**
+	 *metodo per la generazione delle statistiche sui linguaggi scelti
+	 * @param offerte su cui fare statistiche
+	 * @return statistiche non filtrate
+	 */
 	public JSONArray statsLin(ArrayList<Lavori> offerte) {
 		double r1=0, r2=0,r3=0,r4=0,r5=0,s1=0,s2=0,s3=0,s4=0,s5=0;
 		double f1=0, f2=0,f3=0,f4=0,f5=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0;
@@ -131,6 +144,12 @@ public class filteresStatsLinguaggi extends fStats{
 		array.add(ob5);}
 		return array;
 	}
+	/**
+	 * metodo che effettua il filtraggio delle statistiche effettuate sui linguaggi tra quelli scelti dal programmatore
+	 * @param linguaggi su cui filtrare, tra quelli scelti dal programmatore
+	 * @param offerte su cui fare statistiche
+	 * @return statistiche filtrate
+	 */
 	
 		public JSONArray filtraggioStatsLin(JSONArray linguaggi,ArrayList<Lavori> offerte) {
 			String[]lin= new String[linguaggi.size()];
@@ -242,6 +261,12 @@ public class filteresStatsLinguaggi extends fStats{
 				return array;
 				
 			}
+		/**
+		 * metodo che effettua il filtraggio delle statistiche sui linguaggi in base al link specificato
+		 * @param offerte non filtrate
+		 * @param link in base a cui effettuare il filtraggio delle statistiche
+		 * @return statistiche filtrate
+		 */
 		public JSONArray filtraggioLink(ArrayList<Lavori> offerte,String link) {
 			double r1=0, r2=0,r3=0,r4=0,r5=0,s1=0,s2=0,s3=0,s4=0,s5=0;
 			double f1=0, f2=0,f3=0,f4=0,f5=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0;
@@ -364,6 +389,12 @@ public class filteresStatsLinguaggi extends fStats{
 			array.add(ob5);}
 			return array;
 		}
+		/**
+		 * metodo che effettua il filtraggio delle statistiche sui linguaggi in base alla data specificata 
+		 * @param offerte su cui fare statistiche
+		 * @param data in base a cui filtrare le statistiche
+		 * @return statistiche filtrate in base alla data
+		 */
 		public JSONArray filtraggioData(ArrayList<Lavori> offerte,String data) {
 			double r1=0, r2=0,r3=0,r4=0,r5=0,s1=0,s2=0,s3=0,s4=0,s5=0;
 			double f1=0, f2=0,f3=0,f4=0,f5=0,ss1=0,ss2=0,ss3=0,ss4=0,ss5=0;

@@ -15,7 +15,7 @@ import org.json.simple.parser.JSONParser;
  */
 public class serviceAppImplements implements serviceApp{
 	/**
-	 * il metiodo restituisce tutte le offerte di lavoro
+	 * il metodo richiama un altro metodo che consente di ottenere l'elenco di tutte le offerte di lavoro
 	 * @return offerte di lavoro
 	 */
 	public ArrayList<Lavori> getOfferte() {
@@ -26,7 +26,7 @@ public class serviceAppImplements implements serviceApp{
 		
 	}
 	/**
-	 *il metodo restituisce le offerte di lavoro filtrate in base al tipo di filtro specificato 
+	 *il metodo analizza il parametro in cui viene specificato il tipo di filtro da utilizzare e, in base a quest'ultimo, vengono richiamati opportuni metodi per il filtraggio
 	 *@param elenco tutte offerte di lavoro
 	 *@param città su con cui filtrare
 	 *@param linguaggi con cui filtrare
@@ -58,7 +58,7 @@ public class serviceAppImplements implements serviceApp{
 		
 	}
 	/**
-	 * statistiche sui lavori, in base al parametro le statistiche vengono effettuate o sulle città o sui linguaggi predefiniti
+	 * il metodo analizza il parametro specificato dall'utente per capire i metodi da richiamare per effetuare la statistica esatta 
 	 * @param elenco di tutti i lavori
 	 * @param parametro utilizzato dal metodo per capire se effettuare statistiche sui linguaggi o sulle città
 	 * @return statistiche sui lavori
@@ -75,11 +75,16 @@ public class serviceAppImplements implements serviceApp{
 			throw new parException("PARAMETRO ERRATO:inserire un parametro corretto per la richiesta");
 		}
 	}
-	/**@param
-	 * @param
-	 * @param
-	 * @param
+	/**
+	 * metodo usato per il filtraggio delle statistiche 
+	 * @param elenco di tutti i lavori
+	 * @param elenco città su cui effettuare statistiche
+	 * @param elenco linguaggi su cui effettuare statistiche
+	 * @param specifica parametro su cui effettuare le statistiche
+	 * @param link per eventuale filtraggio
+	 * @param data per eventuale filtraggio
 	 * @return
+	 * 
 	 */
 	public ArrayList<Lavori> analisiFiltersStats(ArrayList<Lavori> offerte,JSONArray city,JSONArray linguaggi,String parametro,String link,String data) throws bodyException{
 		if(parametro.equals("city")) {
@@ -109,7 +114,12 @@ public class serviceAppImplements implements serviceApp{
 			throw new bodyException("BODY ERRATO :inserire un body corretto per la richiesta ");
 		}
 		
-	}
+	} 
+	/**
+	 * metodo usato per la creazione di un oggetto json a partire da una stringa 
+	 * @param jsonString, stringa a partire dalla quale viene creato il un jsonobject
+	 * @return jsonobject creato 
+	 */
 	
 	public  JSONObject createJSONObject(String jsonString){
 	    JSONObject  jsonObject=new JSONObject();

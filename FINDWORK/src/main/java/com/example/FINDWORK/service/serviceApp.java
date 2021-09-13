@@ -4,7 +4,11 @@ import com.example.FINDWORK.exception.parException;
 import com.example.FINDWORK.model.Lavori;
 import java.util.ArrayList;
 import org.json.simple.*;
-
+/**
+ * interfaccia servizi esposti dall'applicazione
+ * @author marty
+ *
+ */
 public interface serviceApp {
 	public ArrayList<Lavori> getOfferte();
 	public ArrayList<Lavori> analisiFiltro(ArrayList<Lavori>offerte,JSONArray city,JSONArray flin,String parametro) throws bodyException;

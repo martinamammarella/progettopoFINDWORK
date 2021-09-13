@@ -16,7 +16,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.io.*;
 import java.util.*;
+/**
+ * classe che implementa metodo per la chiamata api e per la creazione del jsonobject che contiene tutte le offerte di lavoro
+ * @author marty
+ *
+ */
 public class cJson {
+	/**
+	 * il metodo implementa la chiamata api e restituisce un jsonobject contenente tutte le offerte di lavoro disponibili all'utente o  ad altri metodi/classi del programma
+	 * @return
+	 */
 	public ArrayList<Lavori> toJson() {
 		 JSONObject chiamata=null;
 			JSONParser parser= new JSONParser();

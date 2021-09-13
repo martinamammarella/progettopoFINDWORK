@@ -1,12 +1,21 @@
 package com.example.FINDWORK.utils;
 import org.json.simple.*;
+/**
+ *  classe da cui istanziare oggetti per il filtraggio sui linguaggi, deriva dalla classe Filters 
+ */
 import com.example.FINDWORK.model.Lavori;
 import java.util.*;
 public class filterLin extends Filters {
+	/**
+	 * costruttore, richiaa costruttore della superclasse 
+	 */
 	public filterLin() {};
-	public filterLin(String[] city, String[] linguaggi,String remoto,String oreLavoro){
-		 super(city,linguaggi,remoto,oreLavoro);
-	}
+	/**
+	 * metodo per il filtraggio dei lavori in base ai linguaggi passati
+	 * @param flinguaggi, elenco linguaggi su cui effettuare il filtraggio
+	 * @param offerte non filtrate
+	 * @return lavori filtrati in base ai linguaggi specificati
+	 */
 	public ArrayList<Lavori> filtraggio(JSONArray flinguaggi,ArrayList<Lavori>offerte) {
 		ArrayList<Lavori> filtrato = new ArrayList<Lavori>();
 		String []flin= new String[flinguaggi.size()];
