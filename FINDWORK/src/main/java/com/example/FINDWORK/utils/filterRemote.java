@@ -5,7 +5,7 @@ import java.util.Vector;
 import com.example.FINDWORK.model.Lavori;
 import org.json.simple.JSONArray;
 /**
- * classe da cui istanziare oggetti per il filtraggio in base alla possibilità di svolgere lavori in remoto o non, deriva dalla classe Filters 
+ * classe da cui istanziare oggetti per il filtraggio in base alla possibilità di svolgere lavori in remoto , deriva dalla classe Filters 
  * @author marty
  *
  */
@@ -15,9 +15,9 @@ public class filterRemote extends Filters{
 	 */
 	public filterRemote() {};
 	/**
-	 * metodo che effettua il filtraggio dei lavori in base alla possibilità di svolgeri in remoto o non
+	 * metodo che effettua il filtraggio dei lavori che possono essere svolti in remoto
 	 * @param offerte non filtrate
-	 * @return offerte filtrate in base alla possibilità di svolgere il lavoro in remoto o non
+	 * @return offerte filtrate 
 	 */
 	public ArrayList<Lavori> filtraggio(ArrayList<Lavori> offerte) {
 		ArrayList<Lavori> filtrato = new ArrayList<Lavori>();

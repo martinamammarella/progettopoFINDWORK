@@ -35,11 +35,16 @@ public class serviceAppImplements implements serviceApp{
 	 * 
 	 */
 	public ArrayList<Lavori> analisiFiltro(ArrayList<Lavori>offerte,JSONArray city,JSONArray flin,String parametro) throws bodyException {
+		if(parametro.equals("noremote")) {
+			filterNoRemote x= new filterNoRemote();
+			return x.filtraggio(offerte);
+		}
 		if(parametro.equals("remote")) {
 			filterRemote x= new filterRemote();
 			return x.filtraggio(offerte);
 		}
-		if(parametro.equals("full")) {
+		
+		if(parametro.equals("fulltime")) {
 			filterFull x= new filterFull();
 			return x.filtraggio(offerte);
 		}
@@ -51,6 +56,10 @@ public class serviceAppImplements implements serviceApp{
 			filterLin x= new filterLin();
 			return x.filtraggio(flin, offerte);
 			
+		}
+		if(parametro.equals("parttime")) {
+			filterPart x= new filterPart();
+			 return x.filtraggio(offerte);
 		}
 		else {
 			throw new bodyException("BODY ERRATO :inserire un body corretto per la richiesta ");
