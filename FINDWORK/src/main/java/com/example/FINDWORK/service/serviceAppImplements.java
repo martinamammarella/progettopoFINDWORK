@@ -32,7 +32,7 @@ public class serviceAppImplements implements serviceApp{
 	 *@param linguaggi con cui filtrare
 	 *@param specifica il tipo di filtro da applicare 
 	 * @return offerte di lavoro filtrate in base al parametro scelto
-	 * 
+	 * @throws bodyException
 	 */
 	public ArrayList<Lavori> analisiFiltro(ArrayList<Lavori>offerte,JSONArray city,JSONArray flin,String parametro) throws bodyException {
 		if(parametro.equals("noremote")) {
@@ -71,6 +71,7 @@ public class serviceAppImplements implements serviceApp{
 	 * @param elenco di tutti i lavori
 	 * @param parametro utilizzato dal metodo per capire se effettuare statistiche sui linguaggi o sulle città
 	 * @return statistiche sui lavori
+	 * @throws parException
 	 */
 	public ArrayList<Lavori>analisiStatsParametro(ArrayList<Lavori>offerte,String parametro)throws parException{
 		if(parametro.equals("city")) {
@@ -85,22 +86,39 @@ public class serviceAppImplements implements serviceApp{
 		}
 	}
 	/**
-	 * metodo usato per il filtraggio delle statistiche 
+	 * metodo usato per analizzare il jsonobject passato in modo da richiamare metodi esatti per effettuare il filtraggio delle statistiche
 	 * @param elenco di tutti i lavori
 	 * @param elenco città su cui effettuare statistiche
 	 * @param elenco linguaggi su cui effettuare statistiche
 	 * @param specifica parametro su cui effettuare le statistiche
 	 * @param link per eventuale filtraggio
 	 * @param data per eventuale filtraggio
-	 * @return
-	 * 
+	 * @return  statistiche filtrate
+	 * @throws bodyException
+	 * @throws cityException
+	 * @throws linguaggiException
 	 */
-	public ArrayList<Lavori> analisiFiltersStats(ArrayList<Lavori> offerte,JSONArray city,JSONArray linguaggi,String parametro,String link,String data) throws bodyException{
+	public ArrayList<Lavori> analisiFiltersStats(ArrayList<Lavori> offerte,JSONArray city,JSONArray linguaggi,String parametro,String link,String data) throws bodyException, cityException,linguaggiException{
 		if(parametro.equals("city")) {
+			JSONObject ob= new JSONObject();
+			for(Object o: city) {
+				ob=(JSONObject)o;
+				String name=(String)ob.get("name");
+				if(!(name.contains("Berlin")||name.contains("Chicago")|| name.contains("Brooklyn")||name.contains("Plano")||name.contains("Seattle"))){
+				throw  new cityException("Errore:inserire città esatte, fra quelli già selezionati dal programmatore");
+			}}
 			filtersStatsCity x= new filtersStatsCity();
 			return x.filtraggioStatsCity(city, offerte);
 		}
 		if(parametro.equals("linguaggi")) {
+			JSONObject ob= new JSONObject();
+			for(Object o:linguaggi) {
+				ob=(JSONObject)o;
+				String lin=(String)ob.get("lin");
+				if(!(lin.contains("ruby")||lin.contains("kotlin")||lin.contains("javascript")||lin.contains("typescript")||lin.contains("python"))){
+					throw new linguaggiException("Errore:inserire linguaggi esatti,fra quelli già selezionati dal programmatore");
+				}}
+			
 	     	filteresStatsLinguaggi x= new filteresStatsLinguaggi();
 	    	return x.filtraggioStatsLin(linguaggi, offerte);}
 		if(parametro.equals("link")) {
@@ -128,6 +146,7 @@ public class serviceAppImplements implements serviceApp{
 	 * metodo usato per la creazione di un oggetto json a partire da una stringa 
 	 * @param jsonString, stringa a partire dalla quale viene creato il un jsonobject
 	 * @return jsonobject creato 
+	 * @throws org.json.simple.parser.ParseException
 	 */
 	
 	public  JSONObject createJSONObject(String jsonString){

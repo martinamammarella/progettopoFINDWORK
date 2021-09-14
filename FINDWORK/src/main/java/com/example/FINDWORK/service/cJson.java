@@ -66,9 +66,8 @@ public class cJson {
 		    elem.setRuolo((String)l.get("role"));
 		    elem.setSitoWeb((String)l.get("source"));
 		    offerte.add(elem);}
-		    while(chiamata!=null&&(String) chiamata.get("next")!=null ) { 
-		    
-			try {
+			while(chiamata!=null&&(String) chiamata.get("next")!=null ) {
+		    try {
 		    String url=(String)chiamata.get("next");
 		    HttpURLConnection openConnection=(HttpURLConnection)new URL(url).openConnection();
 		     openConnection.setRequestMethod("GET");
