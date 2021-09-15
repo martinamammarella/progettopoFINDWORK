@@ -75,6 +75,36 @@ http://127.0.0.1:8080/statistiche?parametro=linguaggi
 ![3](https://user-images.githubusercontent.com/89917969/133501105-771da4ff-5b73-4ef2-9e32-c3292076970a.JPG)
 
 ![4](https://user-images.githubusercontent.com/89917969/133501120-5711fad3-47b6-4e40-930c-127141dcc824.JPG)
+ROTTA 4
+Questa rotta richiede un body di tipo JSONObject in cui viene specificato il parametro su cui effettuare il filtraggio delle statistiche, le città/i linguaggi/la data /link.
+Attenzione:quando viene inserito un jsonobject deve essere completo di tutte le coppie attributo-valore richiesto,anche se non necessario per generare le statistiche e il relativo filtraggio poichè altrimenti viene generata un'eccezione.
+Attenzione:inserire per il filtraggio città e/o linguaggi scelti dal programmatore
+Elenco città:
+Berlin
+Chicago
+Seattle
+Brooklyn
+Plano
+Elenco linguaggi:
+kotlin
+ruby
+typescript
+javascript
+python
+Body completo da inserire per la seguente richiesta:
+//filtraggio statistiche su 2 città
+http://127.0.0.1:8080/statistichefiltrate
+{
+    "city":[
+        {"name":"Berlin"},
+        {"name":"Plano"}
+    ],
+    "parametro":"city",
+    "linguaggi":[],
+    "data":"",
+    "link":""
 
+
+}
 
 
