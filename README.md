@@ -1,9 +1,12 @@
 # progettopoFINDWORK
 
 ## Diagramma dei casi d'uso
+Il diagramma dei casi d'uso esprime un comportamento, offerto o desiderato, sulla base dei suoi risultati osservabili, in cui l'oggetto esaminato è solitamente un sistema o una sua parte. La sua funzionalità consiste nell'individuare chi o che cosa ha a che fare con il sistema(attore) e che cosa viene fatto(casi d'uso).
+
 ![casi d'uso](https://user-images.githubusercontent.com/89917969/133432378-486b6b2f-4a66-4659-ab51-a59ffb6380e3.PNG)
 
 ## Diagrammi delle classi
+Il diagramma delle classi illustra una collezione di elementi dichiarativi di un modello come classi e tipi, assieme ai loro contenuti e alle loro relazioni. Serve per individuare gli elementi di un sistema.
 
 ![controller](https://user-images.githubusercontent.com/89917969/133440267-a39d5e80-2fda-4c58-a683-e9444d509e18.PNG)      ![exeption](https://user-images.githubusercontent.com/89917969/133440276-deed4085-ca66-40cb-81f4-e778313a3d1c.PNG)
 
@@ -13,5 +16,10 @@
 ![utils](https://user-images.githubusercontent.com/89917969/133440291-97b84dc0-ba74-4d4f-ab9f-d630dafbbe60.PNG)
 
 ## Diagrammi Sequenziali
+I diagrammi di sequenza modellano le interazioni tra gli oggetti in un unico caso d’uso. Essi illustrano come le diverse parti di un sistema interagiscono tra loro per svolgere una funzione, e l’ordine in cui le interazioni avvengono quando un particolare caso d’uso viene eseguito. In parole più semplici, un diagramma di sequenza mostra diverse parti del lavoro di un sistema in una ‘sequenza’ per ottenere qualcosa.
+![filtri](https://user-images.githubusercontent.com/89917969/133441016-39721fd3-4621-4496-b083-881a3e04dd00.PNG)
+
+![lavori](https://user-images.githubusercontent.com/89917969/133441021-5cf5f19a-9b8b-4385-9a92-6872b586d6e2.PNG)
 
 
+![stats](https://user-images.githubusercontent.com/89917969/133441029-3700d0a3-8010-4548-ac3e-265cb50cd89f.PNG)
