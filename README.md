@@ -31,7 +31,7 @@ I diagrammi di sequenza modellano le interazioni tra gli oggetti in un unico cas
 ![stats](https://user-images.githubusercontent.com/89917969/133441029-3700d0a3-8010-4548-ac3e-265cb50cd89f.PNG)
 ##            Rotte
 L'utente può effettuare le richieste tramite Postman al seguente indirizzo localhost:8080.
-[TIPO DI ROTTA.docx](https://github.com/martinamammarella/progettopoFINDWORK/files/7171631/TIPO.DI.ROTTA.docx)
+[TIPO DI ROTTA.docx](https://github.com/martinamammarella/progettopoFINDWORK/files/7171655/TIPO.DI.ROTTA.docx)
 
 
 
