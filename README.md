@@ -106,8 +106,8 @@ http://127.0.0.1:8080/statistichefiltrate
 
 ![9](https://user-images.githubusercontent.com/89917969/133504597-dc1f30ee-7655-4b4a-aff8-532277305d7b.JPG)
 ![8](https://user-images.githubusercontent.com/89917969/133504619-81d69f70-8dd5-4dfa-84d7-073b140e1b55.JPG)
-Attenzione:per il filtraggio attraverso la data occorre inserire la data nell'attributo data nel seguente formato:aaaa-mm-gg come nel seguente esempio
-Body completo per la richiesta 
+Attenzione:per il filtraggio attraverso la data occorre inserire la data nell'attributo data nel seguente formato:aaaa-mm-gg come nel seguente esempio.
+Body completo per la richiesta :
 {
     "city":[],
     "parametro":"data",
