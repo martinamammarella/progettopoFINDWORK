@@ -67,6 +67,7 @@ http://127.0.0.1:8080/statistiche?parametro=city
 ![1](https://user-images.githubusercontent.com/89917969/133500480-be7c838e-e97b-4f27-aafc-7763702d9bd6.JPG)
 ![2](https://user-images.githubusercontent.com/89917969/133500498-8006a3ad-ac07-4291-bfe1-9ffd92bd99fc.JPG)
 http://127.0.0.1:8080/statistiche?parametro=linguaggi
+
 ![3](https://user-images.githubusercontent.com/89917969/133501105-771da4ff-5b73-4ef2-9e32-c3292076970a.JPG)
 ![4](https://user-images.githubusercontent.com/89917969/133501120-5711fad3-47b6-4e40-930c-127141dcc824.JPG)
 
