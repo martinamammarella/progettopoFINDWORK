@@ -61,9 +61,65 @@ Questa rotta richiede  una  Stringa per specificare le statistiche che si voglio
 E' possibile anche visualizzarle entrambe utilizzando il seguente parametro=and
 [note1.txt](https://github.com/martinamammarella/progettopoFINDWORK/files/7172305/note1.txt)
 
+http://127.0.0.1:8080/statistiche?parametro=city
 
-
-
+[
+    {
+        "noremoteChicago": 20.0,
+        "percentualenoremotechicago": 95.23809523809523,
+        "percentualepartchicago": 100.0,
+        "fullChicago": 0.0,
+        "remoteChicago": 1.0,
+        "percentualeremoteChicago": 4.761904761904762,
+        "partchicago": 21.0,
+        "totalechicago": 21.0,
+        "percentualefullChicago": 0.0
+    },
+    {
+        "percentualefullberlino": 80.85399449035813,
+        "noremoteberlino": 704.0,
+        "percentualeremoteberlino": 3.0303030303030303,
+        "remoteberlino": 22.0,
+        "partberlino": 139.0,
+        "totaleberlino": 726.0,
+        "percentualepartberlino": 19.146005509641874,
+        "percentualenoremoteberlino": 96.96969696969697,
+        "fullberlino": 587.0
+    },
+    {
+        "fullSeattle": 0.0,
+        "partseattle": 15.0,
+        "percentualenoremoteseattle": 100.0,
+        "noremoteseattle": 15.0,
+        "percentualefullSeattle": 0.0,
+        "percentualepartSeattle": 100.0,
+        "totaleSeattle": 15,
+        "percentualeremoteSeattle": 0.0,
+        "remoteSeattle": 0.0
+    },
+    {
+        "fullBrooklyn": 0.0,
+        "partbrooklyn": 7.0,
+        "percentualefullBrooklyn": 0.0,
+        "percentualepartbrooklyn": 100.0,
+        "totalebrooklyn": 7,
+        "noremotebrooklyn": 7.0,
+        "remoteBrooklyn": 0.0,
+        "percentualeremoteBrooklyn": 0.0,
+        "percentualenoremotebrooklyn": 100.0
+    },
+    {
+        "totaleplano": 1967,
+        "percentualefullPlano": 100.0,
+        "fullPlano": 1967.0,
+        "partplano": 0.0,
+        "percentualeremotePlano": 0.0,
+        "percentualepartplano": 0.0,
+        "noremoteplano": 1967.0,
+        "remotePlano": 0.0,
+        "percentualenoremoteplano": 1967.0
+    }
+]
 
 
 
