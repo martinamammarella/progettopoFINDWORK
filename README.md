@@ -59,7 +59,6 @@ Body:{
 ROTTA 3
 Questa rotta richiede  una  Stringa per specificare le statistiche che si vogliono visulizzare:quelle relative alle città(parametro=city)o ai linguaggi(parametro=linguaggi) selezionati dal programmatore
 E' possibile anche visualizzarle entrambe utilizzando il seguente parametro=and
-[note1.txt](https://github.com/martinamammarella/progettopoFINDWORK/files/7172305/note1.txt)
 
 http://127.0.0.1:8080/statistiche?parametro=city
 
