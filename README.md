@@ -1,5 +1,4 @@
-[TIPO DI ROTTA.pdf](https://github.com/martinamammarella/progettopoFINDWORK/files/7171672/TIPO.DI.ROTTA.pdf)
-[TIPO DI ROTTA.pdf](https://github.com/martinamammarella/progettopoFINDWORK/files/7171677/TIPO.DI.ROTTA.pdf)
+
 ![Cattura](https://user-images.githubusercontent.com/89917969/133469938-a4cfddb8-7035-4242-9085-f270fa372090.JPG)
 # progettopoFINDWORK
 ##  Introduzione
