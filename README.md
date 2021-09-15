@@ -47,7 +47,7 @@ Esempio body:
     "parametro":"city"}
     ![rotta2](https://user-images.githubusercontent.com/89917969/133481898-72597f07-8136-42b7-8a58-230883ea4997.JPG)
 
-
+Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o linguaggi  di
 
 
 
