@@ -38,6 +38,18 @@ L'utente può effettuare le richieste tramite Postman al seguente indirizzo loca
 ##  Esempi applicazione delle rotte 
 ROTTA 1
 ![rotta1](https://user-images.githubusercontent.com/89917969/133478419-05e9dcef-d01c-474c-994e-c152cdff10c9.JPG)
+ROTTA 2 
+Questa rotta richiede un body del tipo JSONObject in cui sia specificato il tipo di parametro su cui filtrare, le città/ linguaggi su cui effettuare il filtraggio.
+Esempio body:
+{
+    "city":[
+        {"name":"Brooklyn"},
+        {"name":"Seattle"}
+        
+    ],
+    "linguaggi":[],
+    "parametro":"city"
+}
 
 
 
