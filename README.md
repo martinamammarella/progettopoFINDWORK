@@ -1,5 +1,4 @@
 
-![Cattura](https://user-images.githubusercontent.com/89917969/133469938-a4cfddb8-7035-4242-9085-f270fa372090.JPG)
 # progettopoFINDWORK
 ##  Introduzione
  L'aaplicazione presentata offre diverse funzionalità
