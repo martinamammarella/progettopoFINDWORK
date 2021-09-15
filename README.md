@@ -1,4 +1,5 @@
 
+
 # progettopoFINDWORK
 ##  Introduzione
  L'aaplicazione presentata offre diverse funzionalità
@@ -38,6 +39,30 @@ L'utente può effettuare le richieste tramite Postman al seguente indirizzo loca
 ##  Esempi applicazione delle rotte 
 ROTTA 1
 ![rotta1](https://user-images.githubusercontent.com/89917969/133478419-05e9dcef-d01c-474c-994e-c152cdff10c9.JPG)
+ROTTA 2 
+Questa rotta richiede un body del tipo JSONObject in cui sia specificato il tipo di parametro su cui filtrare, le città/ linguaggi su cui effettuare il filtraggio.
+Parametri accettati: city,linguaggi,remote,noremote,fulltime,parttime
+Esempio body:
+{
+    "city":[
+        {"name":"Brooklyn"},
+        {,"name":"Seattle"}],
+    "linguaggi":[],
+    "parametro":"city"}
+    ![rotta2](https://user-images.githubusercontent.com/89917969/133481898-72597f07-8136-42b7-8a58-230883ea4997.JPG)
+
+Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o linguaggi  occorre comunque inviare la richiesta con il jsonobject completo , lasciando vuoti i campi city e linguaggi, come nel seguente esempio
+Body:{
+    "city":[]
+    "linguaggi":[],
+    "parametro":"remote"
+
+![cattura22](https://user-images.githubusercontent.com/89917969/133483411-c04bcc88-85a4-4252-adbb-17fe02b63300.JPG)
+ROTTA 3
+Questa rotta richiede  una  Stringa per specificare le statistiche che si vogliono visulizzare:quelle relative alle città(parametro=city)o ai linguaggi(parametro=linguaggi) selezionati dal programmatore
+E' possibile anche visualizzarle entrambe utilizzando il seguente parametro=and
+[note1.txt](https://github.com/martinamammarella/progettopoFINDWORK/files/7172305/note1.txt)
+
 
 
 
