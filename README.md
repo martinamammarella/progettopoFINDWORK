@@ -42,9 +42,7 @@ Esempio body:
 {
     "city":[
         {"name":"Brooklyn"},
-        {"name":"Seattle"}
-        
-    ],
+        {,"name":"Seattle"}],
     "linguaggi":[],
     "parametro":"city"
 }
