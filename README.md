@@ -1,4 +1,5 @@
 
+
 # progettopoFINDWORK
 ##  Introduzione
  L'aaplicazione presentata offre diverse funzionalità
@@ -49,7 +50,12 @@ Esempio body:
     ![rotta2](https://user-images.githubusercontent.com/89917969/133481898-72597f07-8136-42b7-8a58-230883ea4997.JPG)
 
 Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o linguaggi  occorre comunque inviare la richiesta con il jsonobject completo , lasciando vuoti i campi city e linguaggi, come nel seguente esempio
-
+Body:{
+    "city":[]
+    "linguaggi":[],
+    "parametro":"remote"
+}
+![cattura22](https://user-images.githubusercontent.com/89917969/133483411-c04bcc88-85a4-4252-adbb-17fe02b63300.JPG)
 
 
 
