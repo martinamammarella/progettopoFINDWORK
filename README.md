@@ -54,8 +54,14 @@ Body:{
     "city":[]
     "linguaggi":[],
     "parametro":"remote"
-}
+
 ![cattura22](https://user-images.githubusercontent.com/89917969/133483411-c04bcc88-85a4-4252-adbb-17fe02b63300.JPG)
+ROTTA 3
+Questa rotta richiede  una  Stringa per specificare le statistiche che si vogliono visulizzare:quelle relative alle città(parametro=city)o ai linguaggi(parametro=linguaggi) selezionati dal programmatore
+E' possibile anche visualizzarle entrambe utilizzando il seguente parametro=and
+[note1.txt](https://github.com/martinamammarella/progettopoFINDWORK/files/7172305/note1.txt)
+
+
 
 
 
