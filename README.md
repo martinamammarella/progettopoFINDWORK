@@ -34,6 +34,8 @@ I diagrammi di sequenza modellano le interazioni tra gli oggetti in un unico cas
 L'utente può effettuare le richieste tramite Postman al seguente indirizzo localhost:8080.
 ![Cattura](https://user-images.githubusercontent.com/89917969/133470040-d92c6fd2-a19e-4148-a3a5-1efb5376c520.JPG)
 ##  Esempi applicazione delle rotte 
+ROTTA 1
+![rotta1](https://user-images.githubusercontent.com/89917969/133478419-05e9dcef-d01c-474c-994e-c152cdff10c9.JPG)
 
 
 
