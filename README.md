@@ -1,10 +1,10 @@
 # progettopoFINDWORK
 ##  Introduzione
- L'aaplicazione presentata offre diverse funzionalità:
+ L'aaplicazione presentata offre diverse funzionalità
 -visualizzazione  di tutte le offerte di lavoro reperibili  reperibili su  https://findwork.dev/api/jobs/;
 -filtraggio delle offerte  di lavoro in base al parametro specificato dall'utente : lavori in remoto o non, lavori full time o part time, una o più città da specificare, uno o più linguaggi da specificare;
  -visulizzazione delle statistiche effettuate sulle città o sui linguaggi. Le città su cui sono state effettuate le statistiche sono:Berlin,Seattle,Brooklyn,Chicago,Plano e i linguaggi sono:ruby, typescript,javascript, python, kotlin.Vengono mostrati  le quantità di lavori  in remoto o non, part time o full time  per ogni città e per ogni linguaggio;
- -filtraggio delle statistiche:le statistiche effettuate possono essere filtrate in base ad una o più città, uno o più linguaggi, una data, un "source" specificati dall'utente. 
+ -filtraggio delle statistiche:le statistiche effettuate possono essere filtrate in base ad una o più città, uno o più linguaggi, una data, un "source" specificati dall'utente.(In questo caso occorre specificare  città e linguaggi fra quelli selezionati dal programmatore per effettuare  statistiche altrimenti si genererà un errore).
 
 ## Diagramma dei casi d'uso
 Il diagramma dei casi d'uso esprime un comportamento, offerto o desiderato, sulla base dei suoi risultati osservabili, in cui l'oggetto esaminato è solitamente un sistema o una sua parte. La sua funzionalità consiste nell'individuare chi o che cosa ha a che fare con il sistema(attore) e che cosa viene fatto(casi d'uso).
