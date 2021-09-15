@@ -106,5 +106,25 @@ http://127.0.0.1:8080/statistichefiltrate
 
 ![9](https://user-images.githubusercontent.com/89917969/133504597-dc1f30ee-7655-4b4a-aff8-532277305d7b.JPG)
 ![8](https://user-images.githubusercontent.com/89917969/133504619-81d69f70-8dd5-4dfa-84d7-073b140e1b55.JPG)
+Attenzione:per il filtraggio attraverso la data occorre inserire la data nell'attributo data nel seguente formato:aaaa-mm-gg come nel seguente esempio
+Body completo per la richiesta 
+{
+    "city":[],
+    "parametro":"data",
+    "linguaggi":[],
+    "data":"2021-07-22",
+    "link":""}
+    
+    ![10](https://user-images.githubusercontent.com/89917969/133508283-8700e89b-c60c-4499-9d47-068c0d2c164d.JPG)
+    ![11](https://user-images.githubusercontent.com/89917969/133508304-151cf820-1395-456d-9545-f5cc0cf18c6c.JPG)
+
+![12](https://user-images.githubusercontent.com/89917969/133508328-f66091d8-b527-4863-852e-26be00275989.JPG)
+![13](https://user-images.githubusercontent.com/89917969/133508340-c7e837eb-5856-47ca-8d6f-f5768beb447c.JPG)
+
+![15](https://user-images.githubusercontent.com/89917969/133508369-35574171-f696-48b4-90d2-1830185cc863.JPG)
+
+![16](https://user-images.githubusercontent.com/89917969/133508396-e8a11920-3f47-423c-96a9-c693432f3f48.JPG)
+
+
 
 
