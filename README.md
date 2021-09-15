@@ -1,4 +1,9 @@
-# progettopoFINDWORK
+# progettopoFINDWORK 
+#INTRODUZIONE
+L'aaplicazione presentata offre diverse funzionalità:
+-visualizzazione  di tutte le offerte di lavoro reperibili  reperibili su  https://findwork.dev/api/jobs/;
+-filtraggio delle offerte  di lavoro in base al parametro specificato dall'utente;
+
 
 ## Diagramma dei casi d'uso
 Il diagramma dei casi d'uso esprime un comportamento, offerto o desiderato, sulla base dei suoi risultati osservabili, in cui l'oggetto esaminato è solitamente un sistema o una sua parte. La sua funzionalità consiste nell'individuare chi o che cosa ha a che fare con il sistema(attore) e che cosa viene fatto(casi d'uso).
