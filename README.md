@@ -5,7 +5,7 @@
  L'aplicazione presentata offre diverse funzionalità
 -visualizzazione  di tutte le offerte di lavoro reperibili su  https://findwork.dev/api/jobs/;
 -filtraggio delle offerte  di lavoro in base al parametro specificato dall'utente : lavori in remoto o non, lavori full time o part time, una o più città da specificare, uno o più linguaggi da specificare;
- -visulizzazione delle statistiche effettuate sulle città o sui linguaggi. Le città su cui sono state effettuate le statistiche sono:Berlin,Seattle,Brooklyn,Chicago,Plano e i linguaggi sono:ruby, typescript,javascript, python, kotlin.Vengono mostrati  le quantità di lavori  in remoto o non, part time o full time  per ogni città e per ogni linguaggio;
+ -visulizzazione delle statistiche effettuate sulle città o sui linguaggi. Le città su cui sono state effettuate le statistiche sono:Berlin,Seattle,Brooklyn,Chicago,Plano e i linguaggi sono:ruby, typescript,javascript, python, kotlin.Vengono mostrati  le quantità di lavori  in remoto o non, part time o full time,relative percentuali e totale per ogni città e per ogni linguaggio;
  -filtraggio delle statistiche:le statistiche effettuate possono essere filtrate in base ad una o più città, uno o più linguaggi, una data, un "source" specificati dall'utente.(In questo caso occorre specificare  città e linguaggi fra quelli selezionati dal programmatore per effettuare  statistiche altrimenti si genererà un errore).
 
 ## Diagramma dei casi d'uso
