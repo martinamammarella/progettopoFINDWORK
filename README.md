@@ -144,6 +144,11 @@ Body completo per la richiesta :
 
 ![16](https://user-images.githubusercontent.com/89917969/133508396-e8a11920-3f47-423c-96a9-c693432f3f48.JPG)
 ##Eccezioni
+## Software utilizzati
+-libreria json-simple:per leggere e scrivere oggetti e array JSON
+-framework Spring, in particolare il modulo SpringBoot
+-Apache Maven: gestione delle dipendenze 
+-IDE Eclipse: per lo sviluppo del codice
 ## Sviluppo del progetto
 La realizzazione del progetto è stata suddivisa in più fasi:
 -analisi dei dati a disposizione
@@ -154,7 +159,6 @@ Durante il lavoro è stato necessario soffermarsi su alcuni aspetti: innanzitutt
 Abbiamo osservato che: nella descrizione<text> i linguaggi richiesti per il lavoro erano presenti fra le <keywords>, cosi abbiamo considerato i valori contenuti in tale attributo.
  Al contempo, per quanto riguarda la gestione dei lavori in remoto o non, è stato necessario più volte studiare i dati a nostra disposizione per capire bene quali utilizzare poichè, spesso, le informazioni relative allo smartworking erano contenute all'interno del campo città.
 Per quanto riguarda la gestione dei lavori full time / part time abbiamo fatto riferimento al campo "employment_tipe", considerando lavori part-time quelli di "tipo" contract oppure quelli in cui non vi erano ulteriori specifiche riguardo all'orario di lavoro, poichè fra tutte le offerte trovate in nessuno veniva specificato un orario part-time.
-
 
 
 
