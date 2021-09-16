@@ -88,7 +88,7 @@ http://127.0.0.1:8080/statistiche?parametro=and
 
 ROTTA 4
 Questa rotta richiede un body di tipo JSONObject in cui viene specificato il parametro su cui effettuare il filtraggio delle statistiche, le città/i linguaggi/la data /link.
-Attenzione:quando viene inserito un jsonobject deve essere completo di tutte le coppie attributo-valore richiesto,anche se non necessario per generare le statistiche e il relativo filtraggio poichè altrimenti viene generata un'eccezione.
+Attenzione:quando viene inserito un jsonobject deve essere completo di tutte le coppie attributo-valore richieste,anche se non necessarie per generare le statistiche e il relativo filtraggio poichè altrimenti viene generata un'eccezione.
 Attenzione:inserire per il filtraggio città e/o linguaggi scelti dal programmatore
 Elenco città:
 Berlin
