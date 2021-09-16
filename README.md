@@ -60,7 +60,7 @@ Esempio body:
 
 Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o linguaggi  occorre comunque inviare la richiesta con il jsonobject completo , lasciando vuoti i campi city e linguaggi, come nel seguente esempio
 Body:{
-    "city":[]
+    "city":[],
     "linguaggi":[],
     "parametro":"remote"}
 
