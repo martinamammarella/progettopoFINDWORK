@@ -16,9 +16,15 @@ Il diagramma dei casi d'uso esprime un comportamento, offerto o desiderato, sull
 ## Diagrammi delle classi
 Il diagramma delle classi illustra una collezione di elementi dichiarativi di un modello come classi e tipi, assieme ai loro contenuti e alle loro relazioni. Serve per individuare gli elementi di un sistema.
 
+
+![controller](https://user-images.githubusercontent.com/89917969/133440267-a39d5e80-2fda-4c58-a683-e9444d509e18.PNG)
+
+![exeption](https://user-images.githubusercontent.com/71433608/133479093-f925eb8b-8f76-4d6d-947f-9a10d8b9687e.PNG)
+
 ![controller](https://user-images.githubusercontent.com/89917969/133440267-a39d5e80-2fda-4c58-a683-e9444d509e18.PNG)      
 
 ![exeption](https://user-images.githubusercontent.com/89917969/133500797-f4f13260-7360-4f62-8e88-add90c4e3655.PNG)
+
 
 ![model](https://user-images.githubusercontent.com/89917969/133440282-d55510aa-0a45-4edb-99ff-2da18f8d3d52.PNG)
 
