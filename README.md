@@ -55,7 +55,7 @@ Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o l
 Body:{
     "city":[]
     "linguaggi":[],
-    "parametro":"remote"
+    "parametro":"remote"}
 
 ![cattura22](https://user-images.githubusercontent.com/89917969/133483411-c04bcc88-85a4-4252-adbb-17fe02b63300.JPG)
 ROTTA 3
