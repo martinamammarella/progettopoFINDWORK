@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.example.FINDWORK.service","c":"cJson","l":"cJson()","url":"%3Cinit%3E()"},{"p":"com.example.FINDWORK.service","c":"cJson","l":"toJson()"}]
