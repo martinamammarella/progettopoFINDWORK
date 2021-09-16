@@ -53,7 +53,7 @@ Esempio body:
 {
     "city":[
         {"name":"Brooklyn"},
-        {,"name":"Seattle"}],
+        {"name":"Seattle"}],
     "linguaggi":[],
     "parametro":"city"}
     ![rotta2](https://user-images.githubusercontent.com/89917969/133481898-72597f07-8136-42b7-8a58-230883ea4997.JPG)
