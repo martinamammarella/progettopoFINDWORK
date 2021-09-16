@@ -5,7 +5,7 @@
  L'aplicazione presentata offre diverse funzionalità
 -visualizzazione  di tutte le offerte di lavoro reperibili su  https://findwork.dev/api/jobs/;
 -filtraggio delle offerte  di lavoro in base al parametro specificato dall'utente : lavori in remoto o non, lavori full time o part time, una o più città da specificare, uno o più linguaggi da specificare;
- -visulizzazione delle statistiche effettuate sulle città o sui linguaggi. Le città su cui sono state effettuate le statistiche sono:Berlin,Seattle,Brooklyn,Chicago,Plano e i linguaggi sono:ruby, typescript,javascript, python, kotlin.Vengono mostrati  le quantità di lavori  in remoto o non, part time o full time,relative percentuali e totale per ogni città e per ogni linguaggio;
+ -visulizzazione delle statistiche effettuate sulle città o sui linguaggi. Le città su cui sono state effettuate le statistiche sono:Berlin,Seattle,Brooklyn,Chicago,Plano e i linguaggi sono:ruby, typescript,javascript, python, kotlin.Vengono mostrati  le quantità di lavori  in remoto o non, part time o full time  per ogni città e per ogni linguaggio;
  -filtraggio delle statistiche:le statistiche effettuate possono essere filtrate in base ad una o più città, uno o più linguaggi, una data, un "source" specificati dall'utente.(In questo caso occorre specificare  città e linguaggi fra quelli selezionati dal programmatore per effettuare  statistiche altrimenti si genererà un errore).
 
 ## Diagramma dei casi d'uso
@@ -53,14 +53,14 @@ Esempio body:
 {
     "city":[
         {"name":"Brooklyn"},
-        {"name":"Seattle"}],
+        {,"name":"Seattle"}],
     "linguaggi":[],
     "parametro":"city"}
     ![rotta2](https://user-images.githubusercontent.com/89917969/133481898-72597f07-8136-42b7-8a58-230883ea4997.JPG)
 
 Attenzione:Se il filtraggio viene effettuato su un parametro diverso da city o linguaggi  occorre comunque inviare la richiesta con il jsonobject completo , lasciando vuoti i campi city e linguaggi, come nel seguente esempio
 Body:{
-    "city":[],
+    "city":[]
     "linguaggi":[],
     "parametro":"remote"}
 
@@ -151,11 +151,23 @@ Per quanto riguarda le eccezioni personalizzate,abbiamo sviluppato e previsto la
 -linguaggiException:lanciata quando nella richiesta di tipo post per il filtraggio delle statistiche su uno o più linguaggi vengono inseriti linguaggi non presenti fra quelli scelti dal programmatore
 -parException:lanciata quando nella richiesta di tipo post per ottenere le statistiche viene inserito un parametro su cui non sono state effettuate statistiche
 -generalException:lanciata in situazioni anomale 
+
+## Tests
+Abbiamo realizzato anche una sezione di testing:
+
+![tests](https://user-images.githubusercontent.com/71433608/133626513-f7d63244-f9df-430c-9d5c-3c00e2a14158.PNG)
 ## Software utilizzati
+
 -libreria json-simple:per leggere e scrivere oggetti e array JSON
+
 -framework Spring, in particolare il modulo SpringBoot
+
 -Apache Maven: gestione delle dipendenze 
+
 -IDE Eclipse: per lo sviluppo del codice
+
+-UML designer: per l'implementazione dei diagrammi uml
+
 ## Sviluppo del progetto
 La realizzazione del progetto è stata suddivisa in più fasi:
 -analisi dei dati a disposizione
@@ -165,10 +177,7 @@ La realizzazione del progetto è stata suddivisa in più fasi:
 Durante il lavoro è stato necessario soffermarsi su alcuni aspetti: innanzitutto, in fase iniziale, abbiamo dovuto stabilire quali attributi e valori considerare a partire dalle chiamate, effettuate tramite Postman, alla seguente rotta:https://findwork.dev/api/jobs/
 Abbiamo osservato che: nella descrizione<text> i linguaggi richiesti per il lavoro erano presenti fra le <keywords>, cosi abbiamo considerato i valori contenuti in tale attributo.
  Al contempo, per quanto riguarda la gestione dei lavori in remoto o non, è stato necessario più volte studiare i dati a nostra disposizione per capire bene quali utilizzare poichè, spesso, le informazioni relative allo smartworking erano contenute all'interno del campo città.
-Per quanto riguarda la gestione dei lavori full time / part time abbiamo fatto riferimento al campo "employment_tipe", considerando lavori part-time quelli di "tipo" contract oppure quelli in cui non vi erano ulteriori specifiche riguardo all'orario di lavoro, poichè fra tutte le offerte trovate in nessuno veniva specificato un orario part-time.
-
- # Problematiche riscontrate
- Abbiamo riscontrato delle problematiche nella gestione della condivisione della repository, nel senso che anche se le commit sono state effettuate da entrambi i membri del gruppo, la maggior parte di esse risulta effettuate da Martina, trovandosi la repository nel suo profilo github. Abbiamo provato a risolvere il problema, a progetto ultimato, aggiungendo nel manage access un collaboratore, in questo caso Lorenzo, e gestendo le sue modifiche attraverso delle pull requests che dovevamo essere accettate dall'organizzatore principale. Avendo trovato una soluzione solo a proetto finito gran parte delle commit risulta effettuate solo da Martina.
+Per quanto riguarda la gestione dei lavori full time / part time abbiamo fatto riferimento al campo "employment_tipe", considerando lavori part-time quelli di "tipo" contract oppure quelli in cui non vi erano ulteriori specifiche riguardo all'orario di lavoro, poichè fra tutte le offerte trovate in nessuno veniva specificato un orario part-time. Inoltre abbiamo riscontrato delle problematiche nella gestione della condivisione della repository, nel senso che anche se le commit sono state effettuate da entrambi i membri del gruppo, la maggior parte di esse risulta effettuate da Martina, trovandosi la repository nel suo profilo github. Abbiamo provato a risolvere il problema, a progetto ultimato, aggiungendo nel manage access un collaboratore, in questo caso Lorenzo, e gestendo le sue modifiche attraverso delle pull requests che dovevamo essere accettate dall'organizzatore principale. Avendo trovato una soluzione solo a proetto finito gran parte delle commit risulta effettuate solo da Martina.
  # Autori
  Lorenzo Cichella - 1090189 - 50%
  
