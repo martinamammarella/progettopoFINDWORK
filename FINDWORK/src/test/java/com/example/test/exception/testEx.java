@@ -56,5 +56,4 @@ class testEx {
 		});
 		assertEquals("BODY ERRATO:inserire un body corretto per la richiesta",e.getMessage());
 	}
-
 }
