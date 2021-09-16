@@ -131,7 +131,7 @@ public class filteresStatsLinguaggi extends fStats{
 		ob2.put("remoteruby", r2);
 		ob2.put("noremoteruby", r2);
 		ob2.put("fullruby", f2);
-		ob2.put("partkotlin",ff2);
+		ob2.put("partruby",ff2);
 		ob2.put("percentualenoremoteruby", p2);
 		ob2.put("percentualeremoteruby", s2);
 	    ob2.put("percentualefullruby", ss2);
