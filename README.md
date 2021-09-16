@@ -153,7 +153,7 @@ Per quanto riguarda le eccezioni personalizzate,abbiamo sviluppato e previsto la
 -generalException:lanciata in situazioni anomale 
 
 ## Tests
-Abbiamo realizzato anche una sezione di testing:
+Abbiamo realizzato anche una sezione di testing per verificare che determinati metodi funzionino correttamente e il corretto funzionamento di metodi che generano eccezioni.
 
 ![tests](https://user-images.githubusercontent.com/71433608/133626513-f7d63244-f9df-430c-9d5c-3c00e2a14158.PNG)
 ## Software utilizzati
