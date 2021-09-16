@@ -61,7 +61,7 @@ public class serviceAppImplements implements serviceApp{
 			 return x.filtraggio(offerte);
 		}
 		else {
-			throw new bodyException("BODY ERRATO :inserire un body corretto per la richiesta ");
+			throw new bodyException("BODY ERRATO:inserire un body corretto per la richiesta");
 			}
 		
 	}
