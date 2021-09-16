@@ -1,33 +1,33 @@
 package com.example.FINDWORK.controller;
- import com.example.FINDWORK.exception.*;
-	import com.example.FINDWORK.service.*;
-	import org.json.simple.*;
+import com.example.FINDWORK.exception.*;
+import com.example.FINDWORK.service.*;
+import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
-
 import com.example.FINDWORK.model.*;
-	import com.example.FINDWORK.utils.*;
-	import  java.util.*;
-	import org.springframework.http.HttpStatus;
-	import org.springframework.http.ResponseEntity;
-	import org.springframework.beans.factory.annotation.Autowired;
-	import org.springframework.web.bind.annotation.GetMapping;
-	import org.springframework.web.bind.annotation.PostMapping;
-	import org.springframework.web.bind.annotation.RequestBody;
-	import org.springframework.web.bind.annotation.RequestParam;
-	import org.springframework.web.bind.annotation.RestController;
-	@RestController
-	/**
+import com.example.FINDWORK.utils.*;
+import  java.util.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+ /**
 	 * classe per la gestione delle chiamate da parte del client
 	 * @author marty
 	 *
 	 */
+	
+    @RestController
 	public class controller{
 	serviceAppImplements s= new serviceAppImplements();
-	
 	/**
 	 * rotta di tipo get che permette di visulizzare tutte le offerte li lavoro
 	 * @return offerte di lavoro 
 	 */
+	
 	@GetMapping(value="offerte")
 	 public ArrayList<Lavori> getOfferte(){
 	 return	s.getOfferte();
@@ -70,12 +70,12 @@ import com.example.FINDWORK.model.*;
 			return new ResponseEntity<>(e.getMessage(),HttpStatus.BAD_REQUEST);
 		}
 		}
-  /**
-   * rotta di tipo post che restituisce le statistiche relative alle città/linguaggi scelti dal programmatore 
-   * @param parametro con cui l'utente specifica se vuole visulizzare le statistiche relative alle città o ai linguaggi
-   * @return statistiche 
-   * @throws parException
-   */
+	  /**
+	   * rotta di tipo post che restituisce le statistiche relative alle città/linguaggi scelti dal programmatore 
+	   * @param parametro con cui l'utente specifica se vuole visulizzare le statistiche relative alle città o ai linguaggi
+	   * @return statistiche 
+	   * @throws parException
+	   */
 	@PostMapping(value="statistiche")
 	public ResponseEntity<Object> stats(@RequestParam String parametro) throws parException{
 		try {

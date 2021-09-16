@@ -19,7 +19,7 @@ public class filterFull extends Filters {
 	 * @param offerte non filtrate
 	 * @return offerte filtrate 
 	 */
- public ArrayList<Lavori> filtraggio(ArrayList<Lavori> offerte) {
+    public ArrayList<Lavori> filtraggio(ArrayList<Lavori> offerte) {
 	 ArrayList<Lavori> filtrato = new ArrayList<Lavori>();
 	 for(Lavori z:offerte) {
 		    if(z.getOrarioLavoro()!=null&&(!(z.getOrarioLavoro().equals("contract")))) {

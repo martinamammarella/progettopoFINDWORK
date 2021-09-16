@@ -24,7 +24,7 @@ import java.util.*;
 public class cJson {
 	/**
 	 * il metodo implementa la chiamata api e restituisce un jsonobject contenente tutte le offerte di lavoro disponibili all'utente o  ad altri metodi/classi del programma
-	 * @return
+	 * @return elenco  tutti lavori trovati 
 	 */
 	public ArrayList<Lavori> toJson() {
 		 JSONObject chiamata=null;

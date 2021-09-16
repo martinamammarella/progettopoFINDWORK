@@ -11,7 +11,9 @@ import org.json.simple.JSONArray;
  */
 public class filterRemote extends Filters{
 	/**
-	 * costruttore, richiama costruttore superclasse
+	 * classe da cui istanziare oggetti per il filtraggio in base alla possibilità di svolgere lavori in remoto , deriva dalla classe Filters 
+	 * @author marty
+	 *
 	 */
 	public filterRemote() {};
 	/**

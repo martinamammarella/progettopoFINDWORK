@@ -211,7 +211,6 @@ public class filteresStatsLinguaggi extends fStats{
 	 * @param offerte su cui fare statistiche
 	 * @return statistiche filtrate
 	 */
-	
 		public JSONArray filtraggioStatsLin(JSONArray linguaggi,ArrayList<Lavori> offerte) {
 			String[]lin= new String[linguaggi.size()];
 			double r1=0, r2=0,r3=0,r4=0,r5=0,s1=0,s2=0,s3=0,s4=0,s5=0;

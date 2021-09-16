@@ -23,8 +23,7 @@ public class serviceAppImplements implements serviceApp{
 		ArrayList<Lavori>offerte= new ArrayList();
 		offerte=x.toJson();
 		return offerte;
-		
-	}
+		}
 	/**
 	 *il metodo analizza il parametro in cui viene specificato il tipo di filtro da utilizzare e, in base a quest'ultimo, vengono richiamati opportuni metodi per il filtraggio
 	 *@param elenco tutte offerte di lavoro
@@ -81,6 +80,15 @@ public class serviceAppImplements implements serviceApp{
 		if(parametro.equals("linguaggi")) {
      	filteresStatsLinguaggi x= new filteresStatsLinguaggi();
     	return x.statsLin(offerte);}
+		if(parametro.equals("and")) {
+			ArrayList<Lavori> res= new ArrayList<Lavori>();
+			filtersStatsCity x= new filtersStatsCity();
+			filteresStatsLinguaggi y= new filteresStatsLinguaggi();
+			JSONArray a= new JSONArray();
+			a.add(x.statsCity(offerte));
+			a.add(y.statsLin(offerte));
+			return a;
+		}
 		else {
 			throw new parException("PARAMETRO ERRATO:inserire un parametro corretto per la richiesta");
 		}
@@ -105,7 +113,7 @@ public class serviceAppImplements implements serviceApp{
 				ob=(JSONObject)o;
 				String name=(String)ob.get("name");
 				if(!(name.contains("Berlin")||name.contains("Chicago")|| name.contains("Brooklyn")||name.contains("Plano")||name.contains("Seattle"))){
-				throw  new cityException("Errore:inserire città esatte, fra quelli già selezionati dal programmatore");
+				throw  new cityException("Errore:inserire città esatte, fra quelle già selezionati dal programmatore");
 			}}
 			filtersStatsCity x= new filtersStatsCity();
 			return x.filtraggioStatsCity(city, offerte);

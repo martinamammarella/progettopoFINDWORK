@@ -212,7 +212,6 @@ return array;
 	 * @param offerte su cui effettuare statistiche
 	 * @return statistiche filtrate
 	 */
-	
 	public JSONArray filtraggioStatsCity(JSONArray scity,ArrayList<Lavori> offerte) {
 	String[]city= new String[scity.size()];
 	double r1=0, r2=0,r3=0,r4=0,r5=0;

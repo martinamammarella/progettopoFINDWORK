@@ -13,11 +13,12 @@ public class filterPart extends Filters{
 	 * costruttore, richiama costruttore della superclasse
 	 */
 	public filterPart () {};
-/**
- * metodo per il filtraggio dei lavori in base al tipo di contratto part-time
- * @param offerte non filtrate
- * @return offerte filtrate
- */
+	/**
+	 * metodo per il filtraggio dei lavori in base al tipo di contratto part-time
+	 * @param offerte non filtrate
+	 * @return offerte filtrate
+	 */
+
 	public ArrayList<Lavori> filtraggio(ArrayList<Lavori> offerte) {
 		ArrayList<Lavori> filtrato = new ArrayList<Lavori>();
 		 for(Lavori z:offerte) {

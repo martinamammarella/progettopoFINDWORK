@@ -1,10 +1,10 @@
 package com.example.FINDWORK.utils;
 import org.json.simple.*;
+import com.example.FINDWORK.model.Lavori;
+import java.util.*;
 /**
  *  classe da cui istanziare oggetti per il filtraggio sui linguaggi, deriva dalla classe Filters 
  */
-import com.example.FINDWORK.model.Lavori;
-import java.util.*;
 public class filterLin extends Filters {
 	/**
 	 * costruttore, richiaa costruttore della superclasse 
