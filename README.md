@@ -143,7 +143,14 @@ Body completo per la richiesta :
 ![15](https://user-images.githubusercontent.com/89917969/133508369-35574171-f696-48b4-90d2-1830185cc863.JPG)
 
 ![16](https://user-images.githubusercontent.com/89917969/133508396-e8a11920-3f47-423c-96a9-c693432f3f48.JPG)
-##Eccezioni
+## Eccezioni
+L'applicazione può lanciare sia eccezioni standard che personalizate.
+Per quanto riguarda le eccezioni personalizzate,abbiamo sviluppato e previsto la gestione delle seguenti:
+-bodyExcpetion: lanciata quando nella richiesta di tipo post viene inserito un jsonobject sbagliato(campi/valori errati)
+-cityException:lanciata quando nella richiesta di tipo post per il filtraggio delle statistiche su una o più città vengono inserite città non presenti fra quelle scelte dal programmatore
+-linguaggiException:lanciata quando nella richiesta di tipo post per il filtraggio delle statistiche su uno o più linguaggi vengono inseriti linguaggi non presenti fra quelli scelti dal programmatore
+-parException:lanciata quando nella richiesta di tipo post per ottenere le statistiche viene inserito un parametro su cui non sono state effettuate statistiche
+-generalException:lanciata in situazioni anomale 
 ## Software utilizzati
 -libreria json-simple:per leggere e scrivere oggetti e array JSON
 -framework Spring, in particolare il modulo SpringBoot
