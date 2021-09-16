@@ -143,6 +143,19 @@ Body completo per la richiesta :
 ![15](https://user-images.githubusercontent.com/89917969/133508369-35574171-f696-48b4-90d2-1830185cc863.JPG)
 
 ![16](https://user-images.githubusercontent.com/89917969/133508396-e8a11920-3f47-423c-96a9-c693432f3f48.JPG)
+Attenzione:per quanto riguarda il filtraggio delle statistiche in base al "link", abbiamo fatto riferimento al campo "source".
+In particolare questo può assumere i seguenti valori,su cui dunque può avvenire il filtraggio delle statistiche:
+Stackoverflow,Remoteok,News.ycombinator,Github,Weworkremotely,Dribbble,Lavori.cncf,Criptovalutajobs,Coroflot,BerlinStartupjobs.
+Segue un esempio 
+rotta:http://127.0.0.1:8080/statistichefiltrate
+Body completo: { "city":[], "parametro":"link", "linguaggi":[], "data":"2021-07-22", "link":"Stackoverflow"}
+
+![20](https://user-images.githubusercontent.com/89917969/133675700-6169da54-9aff-4a71-86e8-d2332c5e11a4.JPG)
+![21](https://user-images.githubusercontent.com/89917969/133675705-2219ccd9-db37-4aee-98fc-8a9a50276b60.JPG)
+
+![22](https://user-images.githubusercontent.com/89917969/133675712-bd5a9428-cbdb-49d4-bf23-a98346b3aa8c.JPG)
+
+
 ## Eccezioni
 L'applicazione può lanciare sia eccezioni standard che personalizate.
 Per quanto riguarda le eccezioni personalizzate,abbiamo sviluppato e previsto la gestione delle seguenti:
