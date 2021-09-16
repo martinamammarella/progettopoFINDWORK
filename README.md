@@ -160,5 +160,11 @@ Abbiamo osservato che: nella descrizione<text> i linguaggi richiesti per il lavo
  Al contempo, per quanto riguarda la gestione dei lavori in remoto o non, è stato necessario più volte studiare i dati a nostra disposizione per capire bene quali utilizzare poichè, spesso, le informazioni relative allo smartworking erano contenute all'interno del campo città.
 Per quanto riguarda la gestione dei lavori full time / part time abbiamo fatto riferimento al campo "employment_tipe", considerando lavori part-time quelli di "tipo" contract oppure quelli in cui non vi erano ulteriori specifiche riguardo all'orario di lavoro, poichè fra tutte le offerte trovate in nessuno veniva specificato un orario part-time.
 
+ # Problematiche riscontrate
+ Abbiamo riscontrato delle problematiche nella gestione della condivisione della repository, nel senso che anche se le commit sono state effettuate da entrambi i membri del gruppo, la maggior parte di esse risulta effettuate da Martina, trovandosi la repository nel suo profilo github. Abbiamo provato a risolvere il problema, a progetto ultimato, aggiungendo nel manage access un collaboratore, in questo caso Lorenzo, e gestendo le sue modifiche attraverso delle pull requests che dovevamo essere accettate dall'organizzatore principale. Avendo trovato una soluzione solo a proetto finito gran parte delle commit risulta effettuate solo da Martina.
+ # Autori
+ Lorenzo Cichella - 1090189 - 50%
+ 
+ Martina Mammarella - 1094612- 50%
 
 
