@@ -143,6 +143,17 @@ Body completo per la richiesta :
 ![15](https://user-images.githubusercontent.com/89917969/133508369-35574171-f696-48b4-90d2-1830185cc863.JPG)
 
 ![16](https://user-images.githubusercontent.com/89917969/133508396-e8a11920-3f47-423c-96a9-c693432f3f48.JPG)
+##Eccezioni
+## Sviluppo del progetto
+La realizzazione del progetto è stata suddivisa in più fasi:
+-analisi dei dati a disposizione
+-progettazione
+-sviluppo UML
+-sviluppo codice
+Durante il lavoro è stato necessario soffermarsi su alcuni aspetti: innanzitutto, in fase iniziale, abbiamo dovuto stabilire quali attributi e valori considerare a partire dalle chiamate, effettuate tramite Postman, alla seguente rotta:https://findwork.dev/api/jobs/
+Abbiamo osservato che: nella descrizione<text> i linguaggi richiesti per il lavoro erano presenti fra le <keywords>, cosi abbiamo considerato i valori contenuti in tale attributo.
+ Al contempo, per quanto riguarda la gestione dei lavori in remoto o non, è stato necessario più volte studiare i dati a nostra disposizione per capire bene quali utilizzare poichè, spesso, le informazioni relative allo smartworking erano contenute all'interno del campo città.
+ 
 
 
 
